@@ -28,6 +28,7 @@ Instead of keeping goals vague, each topic should be converted into:
 ## Standard Output
 Each project should usually contain:
 - a project-level `README.md`
+- a `MILESTONES.md` file that defines project milestones
 - a `linear_issues.csv` file for import into `Linear`
 
 The CSV columns are fixed:
@@ -43,6 +44,7 @@ Default rule:
 
 ## Task Splitting Rules
 - Lock the cycle length, daily study time, primary material, supporting material, and target outcome before splitting work.
+- Define project milestones before writing issues or CSV rows.
 - Default to `daily issues`, not broad weekly buckets.
 - Each issue should be completable within the same day.
 - Each issue must include both `input` and `output`; reading or listening alone is not enough.
@@ -56,9 +58,22 @@ Default rule:
 - If one day contains two heavy tracks, such as primary material plus supporting practice, prefer splitting them into separate issues.
 - Supporting materials should be defined by task type and acceptance criteria, not by forcing one exact source item unless the source itself matters.
 
+## Milestone Rules
+- Each project must have a `MILESTONES.md` file.
+- `MILESTONES.md` defines the milestone list that the CSV will use.
+- Each milestone must include:
+  - `Title`
+  - `Description`
+- Create milestones before generating `linear_issues.csv`.
+- Each issue must belong to exactly one milestone.
+- Put milestone ownership in `Labels`, not in free-form topic or task-type tags.
+
 ## Linear Issue Rules
 - `Title` should make the day and task scope obvious.
 - `Description` must follow `SMART`.
+- `Labels` is not a free-form tag collection in this repository.
+- `Labels` must contain exactly one value.
+- That value must exactly match one milestone `Title` from the project's `MILESTONES.md`.
 - Each `Description` must state:
   - task scope
   - required actions
@@ -107,4 +122,4 @@ Recommended examples:
 ## Working Convention
 - Keep the top-level `README.md` focused on reusable rules and repository entry guidance.
 - Keep project-specific details inside each project directory under `projects/`.
-- When a project evolves, update that project's local `README.md` and `linear_issues.csv` instead of overloading the top-level README.
+- When a project evolves, update that project's local `README.md`, `MILESTONES.md`, and `linear_issues.csv` instead of overloading the top-level README.

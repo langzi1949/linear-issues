@@ -10,7 +10,16 @@ This project contains a 30-day English learning plan built for Linear import.
 - Goal: finish `English File Beginner` in 30 days and build practical `A1` ability
 
 ## Files
+- `MILESTONES.md`: project milestone definitions used by the CSV labels
 - `linear_issues.csv`: Linear import file with 60 daily issues
+
+## Milestones
+- `Files 1-2 Cycle`
+- `Files 3-4 Cycle`
+- `Files 5-6 Cycle`
+- `Files 7-8 Cycle`
+- `Files 9-10 Cycle`
+- `Files 11-12 Cycle`
 
 ## Task Design
 - `2 days` per `File`
@@ -18,6 +27,7 @@ This project contains a 30-day English learning plan built for Linear import.
 - Each study day is split into `2` issues:
   - one `English File` issue
   - one `English Pod` issue
+- `Labels` in `linear_issues.csv` are milestone titles from `MILESTONES.md`
 - Each issue includes:
   - a single focus area
   - measurable output tasks

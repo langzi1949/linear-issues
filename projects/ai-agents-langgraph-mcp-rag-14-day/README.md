@@ -10,11 +10,19 @@ This project contains a 16-day Linear learning plan for `AI Agents and Applicati
 - Duration: `16 days`
 
 ## Files
+- `MILESTONES.md`: project milestone definitions used by the CSV labels
 - `linear_issues.csv`: Linear import file with 16 daily issues
+
+## Milestones
+- `Book Study Foundations`
+- `Book Study Advanced Patterns`
+- `RAG Demo Design`
+- `Final Synthesis and Output`
 
 ## Task Design
 - Days `1-12` focus on `Chapter 5-14` plus `2` dedicated review issues
 - Days `13-16` focus on demo design, RAG implementation, agent workflow, and final output
+- `Labels` in `linear_issues.csv` are milestone titles from `MILESTONES.md`
 - Every issue includes:
   - chapter study or implementation scope
   - a measurable output

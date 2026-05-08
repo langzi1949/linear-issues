@@ -18,6 +18,7 @@ Use this skill when the task involves:
 
 For each project, create or maintain:
 - `projects/<project-name>/README.md`
+- `projects/<project-name>/MILESTONES.md`
 - `projects/<project-name>/linear_issues.csv`
 
 Top-level rules live in:
@@ -42,6 +43,7 @@ The CSV columns are fixed:
 Defaults:
 - `Assignee` is always `chenzehao`
 - `Description` must be `SMART`
+- `Labels` must equal exactly one milestone title from `MILESTONES.md`
 
 ## Workflow
 
@@ -52,11 +54,12 @@ Defaults:
    - supporting material
    - output form
    - demo or implementation goal
-4. Split work into daily issues.
-5. Insert explicit `review` or `revise` issues when consolidation matters.
-6. Write `SMART` descriptions with measurable outputs and same-day acceptance criteria.
-7. Create or update the project `README.md`.
-8. Generate or revise `linear_issues.csv`.
+4. Define project milestones in `MILESTONES.md`.
+5. Split work into daily issues.
+6. Insert explicit `review` or `revise` issues when consolidation matters.
+7. Write `SMART` descriptions with measurable outputs and same-day acceptance criteria.
+8. Create or update the project `README.md`.
+9. Generate or revise `linear_issues.csv`.
 
 ## Issue Design Rules
 
@@ -88,13 +91,13 @@ Prefer observable actions such as:
 
 ## Labels and Estimates
 
-Choose labels by work type, not by topic name alone.
+Choose labels by milestone ownership.
 
-Typical label patterns:
-- learning projects: `*-learning`
-- source material: `book-study`, `course-study`
-- implementation: `demo`, `rag`, `agent-workflow`
-- review tasks: `review`, `revise-check`
+Rules:
+- Every issue gets exactly one label value.
+- That value must exactly match one milestone `Title` from the project's `MILESTONES.md`.
+- Do not mix topic tags, chapter tags, review tags, or implementation tags into `Labels`.
+- Keep task type information in `Title` or `Description`, not in `Labels`.
 
 Use estimates comparatively inside the same project:
 - lighter study task: smaller estimate
@@ -110,6 +113,7 @@ Each project `README.md` should usually include:
 - time period
 - primary source
 - supporting source
+- milestone summary
 - output expectations
 - file list
 - issue design summary
