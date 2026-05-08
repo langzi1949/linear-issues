@@ -54,6 +54,37 @@ This workspace stores planning and execution assets for multiple personal projec
 - 应改写为可验证动作，例如“口头造句不少于10句”“录制1段2-3分钟音频”“完成1次无稿复述”
 - 如果任务是学习项目，优先让Description覆盖单日闭环，不把跨多天的执行细节压缩到一条issue里
 
+## AI Contribution
+- This repository allows AI-assisted planning, writing, task splitting, CSV generation, and documentation drafting.
+- AI is used as a productivity tool, not as the final authority on correctness.
+- Final responsibility for scope, acceptance criteria, commits, and pushes remains with the repository owner.
+- When AI materially contributes to a change, prefer making that visible in commit messages, PR descriptions, or project notes.
+- Recommended wording for transparent attribution:
+  - `AI-assisted with Codex`
+  - `AI-assisted with Claude Code`
+  - `AI-assisted planning and drafting`
+- Do not claim AI participation if the change was fully authored or materially rewritten by hand after the initial draft.
+
+## Commit Message Convention
+- Use short, imperative commit subjects.
+- Prefer the format: `<type>: <summary>`.
+- Recommended commit types:
+  - `feat`: new project assets, new plans, new CSV files
+  - `docs`: README updates, notes, planning rules, explanations
+  - `refactor`: reorganizing existing content without changing intent
+  - `fix`: correcting task definitions, labels, estimates, naming, or formatting mistakes
+  - `chore`: repository maintenance or non-content updates
+- If AI materially helped with the change, append a transparent suffix in the subject or body.
+- Recommended subject patterns:
+  - `docs: update workspace rules (AI-assisted with Codex)`
+  - `feat: add AI agent learning Linear plan (AI-assisted with Codex)`
+  - `fix: rebalance estimates in English learning CSV`
+- Keep the subject line focused on the repository change, not the tool.
+- If more detail is needed, use the commit body for:
+  - what changed
+  - why it changed
+  - whether AI was used for planning, drafting, or restructuring
+
 
 ## Conventions
 - Keep the top-level `README.md` as the workspace index
